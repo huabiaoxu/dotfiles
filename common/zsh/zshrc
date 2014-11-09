@@ -1,0 +1,4 @@
+
+. ~/.profile
+
+. ~/dotfiles/common/profile/aliases
