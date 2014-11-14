@@ -3,3 +3,8 @@
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+export PATH="~/bin:$PATH"
+
+# XDG Base Directory Specifications:
+export XDG_CONFIG_HOME=~/dotfiles/config
+export XDG_CACHE_HOME=~/dotfiles/cache

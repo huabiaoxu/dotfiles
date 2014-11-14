@@ -1,4 +1,1 @@
-
-. ~/.profile
-
-. ~/dotfiles/common/profile/aliases
+. ~/dotfiles/common/zsh/zshrc-custom

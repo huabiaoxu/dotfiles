@@ -1,0 +1,18 @@
+export KEYTIMEOUT=0
+# completions
+autoload -U compinit
+compinit -C
+
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/dotfiles/common/zsh/zsh_history
+
+# prompts
+autoload -U colors && colors
+PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
+RPROMPT="%{$fg[red]%}%D{%m/%d %T}%{$reset_color%}%"
+ZLE_PROMPT_INDENT=0
+
+# source common:
+source ~/.profile
+source ~/dotfiles/common/profile/aliases
