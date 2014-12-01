@@ -1,0 +1,160 @@
+
+" Init {{{
+if has('vim_starting')
+  set nocompatible
+  set runtimepath+=~/dotfiles/common/vim/bundle/neobundle.vim
+endif
+" }}}
+
+" Bundles {{{
+call neobundle#begin(expand('~/dotfiles/common/vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Bundles here:
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'edkolev/tmuxline.vim'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'vim-scripts/a.vim'
+NeoBundle 'kien/ctrlp.vim'
+"NeoBundle 'davidoc/taskpaper.vim'
+NeoBundle 'christoomey/vim-tmux-navigator'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'AndrewRadev/linediff.vim'
+
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+" }}}
+
+" Colors, Encodings and UI {{{
+" -- Terminal options {{{
+if !has('gui_running')
+  set t_Co=256
+  "set t_ut=erase
+endif
+
+if has("multi_byte")
+  set termencoding=utf-8
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
+" -- }}}
+
+" -- Color Scheme {{{
+colorscheme wombat256mod
+syntax on
+" -- }}}
+
+" -- UI {{{
+" ---- Highlight 100th Column
+set colorcolumn=100
+highlight ColorColumn ctermbg=8 guibg=8
+
+" ---- Highlight Tabs
+set list
+set listchars=tab:>-
+highlight SpecialKey ctermfg=236 ctermbg=234 guibg=#242424
+
+" ---- Highlight Spelling Mistakes
+set spell
+highlight SpellBad cterm=undercurl ctermbg=bg ctermfg=yellow
+set lazyredraw
+
+" ---- Display Options {{{
+set number
+set showcmd
+set ruler
+set cursorline
+set showmode
+set matchpairs+=<:>
+set laststatus=2
+set showtabline=2
+set cmdheight=1
+set shortmess=atA
+" ---- }}}
+
+" -- }}}
+" }}}
+
+" Editing {{{
+set backspace=2
+set whichwrap+=<,>,h,l
+set nowrap
+set timeoutlen=1000
+set ttimeoutlen=50
+set foldmethod=marker
+"set pastetoggle=
+
+" -- Tabs {{{
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set shiftround
+set autoindent
+set smartindent
+" -- }}}
+" }}}
+
+" Search {{{
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+" }}}
+
+" Path {{{
+set backupdir=~/.backup
+set directory=~/.backup
+set viminfo+=n~/dotfiles/common/vim/viminfo
+" }}}
+
+" Autocomplete {{{
+set wildmenu
+set wildmode=longest:full,list
+set wildignore=*.o,*~,*.pyc,*.d,*/tmp/*,*.so,*.swp,*.gz,*.tar
+set wildignore+=*.css,*.html
+
+" -- Autocomplete Menu
+set completeopt=menu,menuone,longest
+set pumheight=15
+" }}}
+
+" Autocmds {{{
+autocmd BufEnter * silent! lcd %:p:h
+" }}}
+
+" Plugin Options {{{
+
+" -- Airline
+let g:airline_theme='badwolf'
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
+
+" -- Ack
+let g:ack_default_options = " -H --nocolor --nogroup --column"
+
+" -- Vim-Tmux-Navigator
+let g:tmux_navigator_no_mappings=1
+" }}}
+
+" Mappings {{{
+map Y y$
+" -- Tab navigation {{{
+nnoremap <C-k> :tabprevious<CR>
+nnoremap <C-j> :tabnext<CR>
+nnoremap <C-t> :tabnew<CR>:Ex<CR>
+" -- }}}
+
+" --Vim-Tmux-Navigator {{{
+"nnoremap <silent>
+" -- }}}

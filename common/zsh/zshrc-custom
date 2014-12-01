@@ -3,9 +3,14 @@ export KEYTIMEOUT=0
 autoload -U compinit
 compinit -C
 
+# history
 HISTSIZE=100000
 SAVEHIST=100000
 HISTFILE=~/dotfiles/common/zsh/zsh_history
+
+# completion: insensitive (all), partial-word, then substring
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
+       'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # prompts
 autoload -U colors && colors

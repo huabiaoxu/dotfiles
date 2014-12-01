@@ -12,3 +12,362 @@ d
 d
 s
 o
+git status
+vim ~/.tmux.conf
+ll
+ll
+mv em_guassian_mixture.py em_inference.py
+mv em_inference.py em_gaussian_estimate.py
+ll
+vim em_gaussian_estimate.py
+fg
+vim em_gaussian_estimate.py
+cd
+cd dotfiles/
+ll
+cd common
+ll
+mkdir vim
+cd vim
+ll
+vim vimrc
+ll
+cd 
+ln -s dotfiles/common/vim/vimrc .vimrc
+mkdir dotfiles/common/backup
+ln -s dotfiles/common/backup .backup
+ll
+ln -s dotfiles/common/vim .vim
+ll -a
+cd .vim
+ll
+mkdir bundle
+git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+vim
+vim
+vim
+fg
+fg
+vim
+cd
+fg
+cd
+cd Google\ Drive/School/2014.2\ Fall/GA2046\ Advanced\ Econometric\ Modeling\ and\ Big\ Data
+ll
+cd HW4
+ll
+cd Work
+ll
+ll
+chmod +x gaussian_mixture_generate.py
+./gaussian_mixture_generate.py
+fg
+./gaussian_mixture_generate.py
+./gaussian_mixture_generate.py 2 params.in sample.out
+echo $PATH
+which python
+python
+ll
+cd Documents
+ll
+cd ../Google\ Drive
+ll
+cd School
+ll
+cd 2014.2\ Fall
+ll
+cd GA2046\ Advanced\ Econometric\ Modeling\ and\ Big\ Data
+ll
+cd HW4
+ll
+mkdir Work
+cd Work
+ll
+vim em_guassian_mixture.py
+which python
+fg
+chmod +x em_guassian_mixture.py
+./em_guassian_mixture.py
+./em_guassian_mixture.py 2 3
+fg
+./em_guassian_mixture.py
+fg
+./em_guassian_mixture.py
+./em_guassian_mixture.py 2
+./em_guassian_mixture.py 2 3
+fg
+./em_guassian_mixture.py 2 3
+./em_guassian_mixture.py 2 3 3
+fg
+./em_guassian_mixture.py 2 3 3
+fg
+./em_guassian_mixture.py 2 3 3
+./em_guassian_mixture.py 2 2
+fg
+fg
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 1
+./em_guassian_mixture.py 1 2
+fg
+fg
+./em_guassian_mixture.py 1 2
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+fg
+./em_guassian_mixture.py 2 2
+./em_guassian_mixture.py 10 2
+fg
+./em_guassian_mixture.py 10 2
+fg
+fg
+fg
+./em_guassian_mixture.py 10 2
+fg
+./em_guassian_mixture.py 10000 2
+fg
+./em_guassian_mixture.py 10000 2
+fg
+./em_guassian_mixture.py 10000 2
+fg
+./em_guassian_mixture.py 10000 2
+fg
+./em_guassian_mixture.py 10000 2
+fg
+python
+fg
+fg
+fg
+./em_guassian_mixture.py 10000 2
+fg
+./em_guassian_mixture.py 10000 2
+fg
+./em_guassian_mixture.py 10000 2
+fg
+./em_guassian_mixture.py 10000 2
+./em_guassian_mixture.py 1000 2
+fg
+./em_guassian_mixture.py 1000 2
+fg
+./em_guassian_mixture.py 1000 2
+fg
+./em_guassian_mixture.py 1000 2
+fg
+./em_guassian_mixture.py 1000 2
+fg
+./em_guassian_mixture.py 1000 2
+fg
+python
+python --version
+sudo port install py27-numpy py27-scipy py27-matplotlib py27-ipython +notebook py27-pandas py27-sympy py27-nose
+python
+python2.7
+sudo port selfupdate
+sudo port upgrade outdated
+python
+python
+sudo port select --set python python27
+python
+fg
+which python
+fg
+./em_guassian_mixture.py 1000 2
+python
+which python
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg python
+python
+fg
+python
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+fg
+fg
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python
+fg vim
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+fg
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+python em_guassian_mixture.py 1000 2
+fg
+python em_guassian_mixture.py 1000 2
+python em_guassian_mixture.py 1000 2
+python em_guassian_mixture.py 1000 2
+fg
+fg
+fg
+tmux attach
+tmux
+tmux
+#sudo port select --set python python27
+tmux attach
