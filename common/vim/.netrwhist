@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/immakiku/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work'
+let g:netrw_dirhist_2='/Users/immakiku/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW3/Work'
+let g:netrw_dirhist_3='/Users/immakiku/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW3'

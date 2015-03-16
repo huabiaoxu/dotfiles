@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/estimate
+~MSle0~/\<gibbs_sample\>
 
 # Last Substitute String:
 $
@@ -16,10 +16,13 @@ $
 # Command Line History (newest to oldest):
 :qa
 :w
+:e ../../Final/generate.py
+:q
+:wq
+:TmuxlineSnapshot ~/tmuxline
 :e scatter_plot.py
 :32
 :wj
-:q
 :we
 :e gmm_generate.py
 :e gaussian_mixture_generate.py
@@ -29,6 +32,8 @@ $
 :set colorscheme
 
 # Search String History (newest to oldest):
+? \<gibbs_sample\>
+? \<Hyperparameters\>
 ?/estimate
 ?/range(
 ?/print
@@ -49,38 +54,49 @@ $
 
 # Registers:
 "0	LINE	0
-	    x = np.loadtxt(in_file)
+	    parser.add_argument('beta',  type=float, help='beta')
 "1	LINE	0
-	
+	    if len(argv) != 3:
+	        
 "2	LINE	0
+	
+"3	LINE	0
+	
+"4	LINE	0
+	
+"5	LINE	0
+	
+"6	LINE	0
+	
+"7	LINE	0
 	    print coefs
 	    print mus
 	    print sigmas
-"3	LINE	0
-	#    #print np.diag(var_scaled)
-"4	LINE	0
-	#    var_scaled = var / math.pow(n, 2 / float(dim))
-"5	LINE	0
-	#    low, high, var = np.amin(x, axis=0), np.amax(x, axis=0), np.var(x, axis=0)
-"6	LINE	0
-	#
-"7	LINE	0
-	#    sigmas = np.zeros((n, dim, dim))
 "8	LINE	0
-	#    mus    = np.zeros((n, dim))
+	#    #print np.diag(var_scaled)
 "9	LINE	0
-	#
+	#    var_scaled = var / math.pow(n, 2 / float(dim))
 ""-	CHAR	0
-	0
+	beta
 
 # File marks:
-'0  103  86  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
-'1  51  45  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gaussian_mixture_generate.py
-'2  40  2  ~/.vimrc
-'3  128  15  ~/.vimrc
-'4  128  15  ~/.vimrc
+'0  18  13  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/Final/generate.py
+'1  68  10  ~/.tmux.conf
+'2  103  86  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+'3  51  45  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gaussian_mixture_generate.py
+'4  40  2  ~/.vimrc
+'5  128  15  ~/.vimrc
+'6  128  15  ~/.vimrc
 
 # Jumplist (newest first):
+-'  18  13  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/Final/generate.py
+-'  10  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW3
+-'  65  22  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW3/Work/gibbs_sampler.py
+-'  250  34  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW3/Work/gibbs_sampler.py
+-'  248  19  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW3/Work/gibbs_sampler.py
+-'  1  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW3/Work/gibbs_sampler.py
+-'  68  10  ~/.tmux.conf
+-'  1  0  ~/.tmux.conf
 -'  103  86  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
 -'  97  48  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
 -'  66  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
@@ -127,8 +143,89 @@ $
 -'  57  4  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/em_gaussian_estimate.py
 -'  86  4  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/em_gaussian_estimate.py
 -'  1  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/em_gaussian_estimate.py
+-'  103  86  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  97  48  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  66  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  67  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  68  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  69  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  70  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  71  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  72  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  73  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  74  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  75  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  8  17  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  115  4  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  113  25  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  2  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  112  4  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  49  4  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  27  24  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  76  13  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  19  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  84  4  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  42  8  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  82  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  16  77  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  15  33  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  11  40  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  12  15  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  29  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  20  23  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  79  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  6  10  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  92  13  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  17  18  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  18  54  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  14  66  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  94  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  89  4  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  1  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gmm_em_estimate.py
+-'  9  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work
+-'  1  9  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/params.in
+-'  1  0  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gaussian_mixture_generate.py
+-'  51  45  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/gaussian_mixture_generate.py
+-'  57  4  ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/em_gaussian_estimate.py
 
 # History of marks within files (newest to oldest):
+
+> ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW3/Work/gibbs_sampler.py
+	"	1	0
+
+> ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/Final/generate.py
+	"	18	13
+	^	18	14
+	.	18	13
+	+	1	0
+	+	2	0
+	+	21	26
+	+	24	0
+	+	15	14
+	+	20	8
+	+	3	14
+	+	5	21
+	+	13	0
+	+	20	0
+	+	19	4
+	+	6	54
+	+	8	53
+	+	9	57
+	+	8	55
+	+	6	83
+	+	10	54
+	+	7	67
+	+	17	3
+	+	12	33
+	+	18	13
+
+> ~/.tmux.conf
+	"	68	10
+	^	68	11
+	.	68	10
+	+	9	0
+	+	10	0
+	+	68	10
 
 > ~/Google Drive/School/2014.2 Fall/GA2046 Advanced Econometric Modeling and Big Data/HW4/Work/em_gaussian_estimate.py
 	"	2	0
@@ -431,12 +528,6 @@ $
 	+	20	47
 	+	23	0
 	+	15	43
-
-> ~/.tmux.conf
-	"	10	0
-	.	10	0
-	+	9	0
-	+	10	0
 
 > ~/.vimrc
 	"	40	2

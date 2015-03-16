@@ -371,3 +371,254 @@ tmux
 tmux
 #sudo port select --set python python27
 tmux attach
+cd
+sudo port selfupdate
+less ~/.zshrc
+cat ~/.zshrc
+cat ~/dotfiles/common/zsh/zshrc-custom
+python
+fg
+fg
+ll
+cd
+cd dotfiles
+ll
+less cache
+ll cache
+ll cache/ctrlp/mru/cache.txt 
+less cache/ctrlp/mru/cache.txt 
+ll
+git status
+git add common
+git status
+git reset HEAD common/vim/.netrwhist
+git status
+git commit -m "vim and tmux"
+ll
+vim
+cd
+ll
+mv tmuxline dotfiles/common/tmux/
+vim ~/.tmux.conf
+vim
+./gaussian_mixture_generate.py
+./gaussian_mixture_generate.py2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+fg
+fg
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+fg
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+python
+./gaussian_mixture_generate.py 2 params.in sample.out
+fg
+python
+python
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+pdb gaussian_mixture_generate.py 2 params.in sample.out
+pdb
+which pdb
+which pdb
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+fg
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+./gaussian_mixture_generate.py 2 params.in 10 sample.out
+less sample.out
+./gaussian_mixture_generate.py 2 params.in 1000 sample.out
+ll
+less sample.out
+./gmm_generate.py 2 params.in 1000 sample.out
+./gmm_em_estimate.py
+which scipy
+which python
+echo $PATH
+python --version
+./gmm_em_estimate.py
+./gmm_em_estimate.py 2 sample.out classified.out
+./gmm_em_estimate.py 2 sample.out classified.out
+./gmm_em_estimate.py 2 sample.out classified.out
+./gmm_em_estimate.py 2 sample.out classified.out
+./gmm_em_estimate.py 2 sample.out classified.out
+./gmm_em_estimate.py 2 sample.out classified.out
+./gmm_em_estimate.py 2 sample.out classified.out
+fg
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 2 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+cat params.in
+cat params.in
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+cat params.in
+cat params.in
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+fg
+python gmm_em_estimate.py 4 sample.out classified.out
+wc -l classified.out
+head classified.out
+chmod +x scatter_plot.py
+./scatter_plot.py classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+./scatter_plot.py classified.out
+./gmm_generate.py 2 params.in 1000 sample.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+fg
+./gmm_generate.py 2 params.in 1000 sample.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+cat params.in
+./scatter_plot.py classified.out
+./gmm_generate.py 2 params.in 1000 sample.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+fg
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+fg
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+./scatter_plot.py classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+./scatter_plot.py classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+./scatter_plot.py classified.out
+cat params.in
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py classified.out
+./scatter_plot.py classified.out
+ll gmm_*
+#./gmm_generate.py 2 params.in 1000 sample.out
+fg
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py sample.out classified.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py sample.out classified.out
+#./gmm_generate.py 2 params.in 1000 sample.out
+ll
+./gmm_generate.py 2 params.in 1000 sample.out
+python gmm_em_estimate.py 4 sample.out classified.out
+./scatter_plot.py sample.out classified.out
+./scatter_plot.py sample.out classified.out
+cat params
+cat params.in
+ll
+ll ../Writeup
+fg
+fg
+vim -p *.py
+fg
+ll
+mv em_gaussian_estimate.py gmm_em_estimate.py
+mv gaussian_mixture_generate.py gmm_generate.py
+fg
+fg
+vim dotfiles/common/zsh/zshrc-custom
+vim ~/.profile
+cd dotfiles
+git status
+git add .
+git status
+git commit -c 'added zshrc'
+git commit -m 'added zshrc, tmux'
+vim common/zsh/zshrc-custom
+tmux
+fg
+tmux attach
+fg
+tmux attach
+tmux
