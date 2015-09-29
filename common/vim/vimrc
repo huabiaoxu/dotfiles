@@ -23,6 +23,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'AndrewRadev/linediff.vim'
+NeoBundle 'davidhalter/jedi-vim'
 
 call neobundle#end()
 
@@ -115,7 +116,7 @@ set smartcase
 " Path {{{
 set backupdir=~/.backup
 set directory=~/.backup
-set viminfo+=n~/dotfiles/common/vim/viminfo
+set viminfo+=n~/.hist/viminfo
 " }}}
 
 " Autocomplete {{{

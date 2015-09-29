@@ -1,10 +1,5 @@
-
-# MacPorts Installer addition on 2014-10-31_at_23:21:17: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-export PATH="~/bin:$PATH"
+export PATH=~/sbin:~/bin:$PATH
 
 # XDG Base Directory Specifications:
 export XDG_CONFIG_HOME=~/dotfiles/config
-export XDG_CACHE_HOME=~/dotfiles/cache
+export XDG_CACHE_HOME=~/.hist/cache

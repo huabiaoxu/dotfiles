@@ -1,6 +1,7 @@
 a.vim
 ack.vim
 ctrlp.vim
+jedi-vim
 linediff.vim
 neobundle.vim
 tmuxline.vim

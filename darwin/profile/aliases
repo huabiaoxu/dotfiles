@@ -1,0 +1,3 @@
+. ~/dotfiles/common/profile/aliases
+
+alias ls='ls -G'

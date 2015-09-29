@@ -1,1 +1,23 @@
-. ~/dotfiles/common/zsh/zshrc-custom
+export KEYTIMEOUT=0
+# completions
+autoload -U compinit
+compinit -C
+
+# history
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/.hist/zsh_history
+
+# completion: insensitive (all), partial-word, then substring
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
+       'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+# prompts
+autoload -U colors && colors
+PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
+RPROMPT="%{$fg[red]%}%D{%m/%d %T}%{$reset_color%}%"
+ZLE_PROMPT_INDENT=0
+
+# source common:
+source ${DOTFILE_DIR}/profile/profile
+source ${DOTFILE_DIR}/profile/aliases
