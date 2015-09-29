@@ -1,1 +1,10 @@
-#
+# history
+HISTSIZE=100000
+HISTFILESIZE=100000
+HISTFILE=~/.hist/bash_history
+
+. ~/dotfiles/common/bash/colors
+
+# prompt
+PS1="${txtred}\u${txtwht}@${txtblu}\h ${txtylw}\w ${txtrst}% "
+

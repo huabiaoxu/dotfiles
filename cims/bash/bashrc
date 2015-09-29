@@ -1,5 +1,6 @@
 . ~/dotfiles/rhel/bash/bashrc
-#
+
+BASH_PS1="$PS1"
 # Get CIMS defaults
 #
 if [ -r /usr/local/lib/.system.bashrc ] ; then
@@ -7,4 +8,4 @@ if [ -r /usr/local/lib/.system.bashrc ] ; then
 fi
 
 # Make individual customizations, such as aliases, below.
-
+PS1="$BASH_PS1"
