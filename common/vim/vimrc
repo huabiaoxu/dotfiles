@@ -114,8 +114,8 @@ set smartcase
 " }}}
 
 " Path {{{
-set backupdir=~/.backup
-set directory=~/.backup
+set backupdir=~/.hist/vim_swp
+set directory=~/.hist/vim_swp
 set viminfo+=n~/.hist/viminfo
 " }}}
 
