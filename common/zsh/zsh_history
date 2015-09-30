@@ -1,0 +1,22 @@
+ls /opt/local
+ls /opt/local/lib
+ls /opt/local/*
+rm -rf /opt/local
+sudo rm -rf /opt/local
+ll
+ll -a
+rm -rf .macports
+ll dotfiles
+git status
+git --version
+mv dotfiles dotfiles.bak
+git clone https://github.com/huabiaoxu/dotfiles.git
+ll
+cd dotfiles
+ll
+cd ..
+ll -a
+rm .backup
+mkdir .backup
+ll
+ll -a
