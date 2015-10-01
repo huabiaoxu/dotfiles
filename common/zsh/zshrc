@@ -19,5 +19,5 @@ RPROMPT="%{$fg[red]%}%D{%m/%d %T}%{$reset_color%}%"
 ZLE_PROMPT_INDENT=0
 
 # source common:
-source ${DOTFILE_DIR}/profile/profile
-source ${DOTFILE_DIR}/profile/aliases
+source ${DOTFILES_DIR}/profile/profile
+source ${DOTFILES_DIR}/profile/aliases

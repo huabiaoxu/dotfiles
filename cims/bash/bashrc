@@ -9,3 +9,7 @@ fi
 
 # Make individual customizations, such as aliases, below.
 PS1="$BASH_PS1"
+
+#module load python-2.7
+
+PATH=/usr/local/pkg/anaconda/2.1.0/bin:$PATH

@@ -8,3 +8,5 @@ HISTFILE=~/.hist/bash_history
 # prompt
 PS1="${txtred}\u${txtwht}@${txtblu}\h ${txtylw}\w ${txtrst}% "
 
+. ${DOTFILES_DIR}/profile/profile
+. ${DOTFILES_DIR}/profile/aliases

@@ -9,9 +9,9 @@ ln -s ~/dotfiles/${hostname}/profile ~/.dotfiles/profile
 ln -s ~/dotfiles/common/tmux ~/.dotfiles/tmux
 ln -s ~/dotfiles/common/vim ~/.dotfiles/vim
 
-echo "export DOTFILE_DIR=~/dotfiles/${hostname}
+echo "export DOTFILES_DIR=~/dotfiles/${hostname}
 
-. \${DOTFILE_DIR}/zsh/zshrc" > ~/.dotfiles/zsh/zshrc
+. \${DOTFILES_DIR}/zsh/zshrc" > ~/.dotfiles/zsh/zshrc
 
 ln -s .dotfiles/profile/profile ~/.profile
 ln -s .dotfiles/tmux/tmux.conf ~/.tmux.conf
