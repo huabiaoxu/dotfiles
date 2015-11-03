@@ -124,6 +124,9 @@ set wildmenu
 set wildmode=longest:full,list
 set wildignore=*.o,*~,*.pyc,*.d,*/tmp/*,*.so,*.swp,*.gz,*.tar
 set wildignore+=*.css,*.html
+if has("wildignorecase")
+    set wildignorecase
+end
 
 " -- Autocomplete Menu
 set completeopt=menu,menuone,longest
@@ -156,6 +159,17 @@ nnoremap <C-j> :tabnext<CR>
 nnoremap <C-t> :tabnew<CR>:Ex<CR>
 " -- }}}
 
-" --Vim-Tmux-Navigator {{{
-"nnoremap <silent>
+" -- Clipboard {{{
+set clipboard=unnamed
+" -- }}}
+
+" -- Mouse {{{
+set mouse=a
+if has("mouse_sgr")
+    set ttymouse=sgr
+else
+    set ttymouse=xterm2
+end
+" -- }}}
+
 " -- }}}
