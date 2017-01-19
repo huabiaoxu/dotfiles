@@ -23,7 +23,8 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'AndrewRadev/linediff.vim'
-NeoBundle 'davidhalter/jedi-vim'
+"NeoBundle 'davidhalter/jedi-vim'
+"NeoBundle 'xuhdev/vim-latex-live-preview'
 
 call neobundle#end()
 
@@ -58,7 +59,7 @@ syntax on
 " -- UI {{{
 " ---- Highlight 100th Column
 set colorcolumn=100
-highlight ColorColumn ctermbg=8 guibg=8
+" highlight ColorColumn ctermbg=8 guibg=8
 
 " ---- Highlight Tabs
 set list
@@ -114,8 +115,8 @@ set smartcase
 " }}}
 
 " Path {{{
-set backupdir=~/.hist/vim_swp
-set directory=~/.hist/vim_swp
+set backupdir=~/.hist/vim_swp//
+set directory=~/.hist/vim_swp//
 set viminfo+=n~/.hist/viminfo
 " }}}
 
@@ -149,6 +150,18 @@ let g:ack_default_options = " -H --nocolor --nogroup --column"
 
 " -- Vim-Tmux-Navigator
 let g:tmux_navigator_no_mappings=1
+
+" -- Tex
+autocmd Filetype tex setl updatetime=1000
+"let g:livepreview_previewer='open -a Preview'
+let g:livepreview_previewer='open -a Skim'
+
+" -- LogiPat
+let g:loaded_logipat = 1
+
+" -- CtrlP
+let g:ctrlp_root_markers = ['CMakeLists.txt']
+
 " }}}
 
 " Mappings {{{
@@ -173,3 +186,4 @@ end
 " -- }}}
 
 " -- }}}
+
