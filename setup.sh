@@ -2,13 +2,14 @@
 
 PROFILENAME=${PROFILENAME:=`hostname -s`}
 
-ln -s common ~/dotfiles/${PROFILENAME}
+# hb, 20170125: this is wrong:
+#ln -s common ~/dotfiles/${PROFILENAME}
 
-mkdir ~/.dotfiles/zsh
-mkdir ~/.dotfiles/bash
+mkdir -p ~/.dotfiles/zsh
+mkdir -p ~/.dotfiles/bash
 ln -s ~/dotfiles/${PROFILENAME}/profile ~/.dotfiles/profile
-ln -s ~/dotfiles/common/tmux ~/.dotfiles/tmux
-ln -s ~/dotfiles/common/vim ~/.dotfiles/vim
+ln -s ~/dotfiles/common/tmux            ~/.dotfiles/tmux
+ln -s ~/dotfiles/common/vim             ~/.dotfiles/vim
 
 echo "export DOTFILES_DIR=~/dotfiles/${PROFILENAME}
 
