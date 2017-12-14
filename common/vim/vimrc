@@ -25,6 +25,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'AndrewRadev/linediff.vim'
 "NeoBundle 'davidhalter/jedi-vim'
 "NeoBundle 'xuhdev/vim-latex-live-preview'
+NeoBundle 'idris-hackers/idris-vim.git'
 
 call neobundle#end()
 

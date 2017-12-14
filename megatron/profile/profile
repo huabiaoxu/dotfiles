@@ -2,5 +2,5 @@
 
 export PATH=~/miniconda/bin:$PATH
 export PATH=~/q/m32:$PATH
-
+export PATH=~/.cabal/bin:$PATH
 
