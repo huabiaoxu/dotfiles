@@ -6,6 +6,7 @@ linediff.vim
 neobundle.vim
 tmuxline.vim
 vim-airline
+vim-airline-themes
 vim-colorschemes
 vim-fugitive
 vim-tmux-navigator
