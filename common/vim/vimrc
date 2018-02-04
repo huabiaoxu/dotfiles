@@ -14,7 +14,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles here:
 NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'bling/vim-airline'
+"NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'edkolev/tmuxline.vim'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'vim-scripts/a.vim'

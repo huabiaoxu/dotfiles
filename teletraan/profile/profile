@@ -1,3 +1,5 @@
 . ~/dotfiles/rhel/profile/profile
 
-PATH=/usr/local/pkg/anaconda/2.1.0/bin:$PATH
+export PATH=$HOME/anaconda3/bin/:$PATH
+
+#PATH=/usr/local/pkg/anaconda/2.1.0/bin:$PATH
