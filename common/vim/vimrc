@@ -6,6 +6,8 @@ if has('vim_starting')
 endif
 " }}}
 
+set rtp+=/usr/local/opt/fzf
+
 " Bundles {{{
 call neobundle#begin(expand('~/dotfiles/common/vim/bundle/'))
 
@@ -14,14 +16,14 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles here:
 NeoBundle 'flazz/vim-colorschemes'
-"NeoBundle 'bling/vim-airline'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'edkolev/tmuxline.vim'
-NeoBundle 'mileszs/ack.vim'
-NeoBundle 'vim-scripts/a.vim'
-NeoBundle 'kien/ctrlp.vim'
+"NeoBundle 'mileszs/ack.vim'
+"NeoBundle 'vim-scripts/a.vim'
+"NeoBundle 'kien/ctrlp.vim'
 "NeoBundle 'davidoc/taskpaper.vim'
+NeoBundle 'junegunn/fzf.vim'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'AndrewRadev/linediff.vim'
@@ -149,7 +151,7 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
 " -- Ack
-let g:ack_default_options = " -H --nocolor --nogroup --column"
+"let g:ack_default_options = " -H --nocolor --nogroup --column"
 
 " -- Vim-Tmux-Navigator
 let g:tmux_navigator_no_mappings=1
@@ -160,10 +162,10 @@ autocmd Filetype tex setl updatetime=1000
 let g:livepreview_previewer='open -a Skim'
 
 " -- LogiPat
-let g:loaded_logipat = 1
+"let g:loaded_logipat = 1
 
 " -- CtrlP
-let g:ctrlp_root_markers = ['CMakeLists.txt']
+"let g:ctrlp_root_markers = ['CMakeLists.txt']
 
 " }}}
 

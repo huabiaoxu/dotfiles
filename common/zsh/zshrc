@@ -24,3 +24,5 @@ ZLE_PROMPT_INDENT=0
 # source common:
 source ${DOTFILES_DIR}/profile/profile
 source ${DOTFILES_DIR}/profile/aliases
+
+[ -f ~/dotfiles/fzf/fzf.zsh ] && source ~/dotfiles/fzf/fzf.zsh

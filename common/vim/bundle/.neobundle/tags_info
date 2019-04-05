@@ -1,6 +1,4 @@
-a.vim
-ack.vim
-ctrlp.vim
+fzf.vim
 idris-vim
 linediff.vim
 neobundle.vim
