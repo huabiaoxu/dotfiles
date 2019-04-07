@@ -1,10 +1,16 @@
 fzf.vim
 idris-vim
+indentline
 linediff.vim
 neobundle.vim
 tmuxline.vim
 vim-airline
 vim-airline-themes
 vim-colorschemes
+vim-commentary
+vim-cpp-enhanced-highlight
 vim-fugitive
+vim-gitgutter
+vim-repeat
+vim-surround
 vim-tmux-navigator

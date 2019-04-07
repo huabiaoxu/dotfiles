@@ -8,6 +8,12 @@ endif
 
 set rtp+=/usr/local/opt/fzf
 
+function! s:find_git_root()
+    return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+endfunction
+
+command! ProjectFiles execute 'Files' s:find_git_root()
+
 " Bundles {{{
 call neobundle#begin(expand('~/dotfiles/common/vim/bundle/'))
 
@@ -19,17 +25,24 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'edkolev/tmuxline.vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'junegunn/fzf.vim'
+NeoBundle 'christoomey/vim-tmux-navigator'
+NeoBundle 'AndrewRadev/linediff.vim'
+NeoBundle 'idris-hackers/idris-vim.git'
+NeoBundle 'yggdroot/indentline'
+NeoBundle 'octol/vim-cpp-enhanced-highlight'
+
 "NeoBundle 'mileszs/ack.vim'
 "NeoBundle 'vim-scripts/a.vim'
 "NeoBundle 'kien/ctrlp.vim'
 "NeoBundle 'davidoc/taskpaper.vim'
-NeoBundle 'junegunn/fzf.vim'
-NeoBundle 'christoomey/vim-tmux-navigator'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'AndrewRadev/linediff.vim'
 "NeoBundle 'davidhalter/jedi-vim'
 "NeoBundle 'xuhdev/vim-latex-live-preview'
-NeoBundle 'idris-hackers/idris-vim.git'
 
 call neobundle#end()
 
@@ -167,10 +180,30 @@ let g:livepreview_previewer='open -a Skim'
 " -- CtrlP
 "let g:ctrlp_root_markers = ['CMakeLists.txt']
 
+" -- IndentLine
+"let g:indentLine_setColors = 0
+
+" command! -bang -nargs=* Rg
+"   \ call fzf#vim#grep(
+"   \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+"   \   <bang>0 ? fzf#vim#with_preview('up:60%')
+"   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+"   \   <bang>0)
+
+" -- fzf.vim
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \           fzf#vim#with_preview('right:50%', '?'),
+  \   <bang>0)
+
 " }}}
 
 " Mappings {{{
 map Y y$
+
+nnoremap <C-p> :ProjectFiles<CR>
+
 " -- Tab navigation {{{
 nnoremap <C-k> :tabprevious<CR>
 nnoremap <C-j> :tabnext<CR>
