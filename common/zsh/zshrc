@@ -30,7 +30,13 @@ source ${DOTFILES_DIR}/profile/aliases
 export FZF_DEFAULT_COMMAND="fd --type file"
 export FZF_CTRL_T_COMMAND="${FZF_DEFAULT_COMMAND}"
 export FZF_DEFAULT_OPTS="
---color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
---color info:108,prompt:109,spinner:108,pointer:168,marker:168
+--color fg:240,bg:230,hl:33,fg+:241,bg+:221,hl+:33
+--color info:33,prompt:33,pointer:166,marker:166,spinner:33
 --preview='bat --style=numbers --color=always {} --line-range :300'
 "
+#--color=bg+:#073642,bg:#002b36,spinner:#719e07,hl:#586e75
+#--color=fg:#839496,header:#586e75,info:#cb4b16,pointer:#719e07
+#--color=marker:#719e07,fg+:#839496,prompt:#719e07,hl+:#719e07
+
+# --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
+# --color info:108,prompt:109,spinner:108,pointer:168,marker:168

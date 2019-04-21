@@ -21,3 +21,4 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+#if [ -e /Users/huabxu/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/huabxu/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
