@@ -37,11 +37,11 @@ call dein#add('autozimu/LanguageClient-neovim', {
     \ 'build': 'bash install.sh',
     \ })
 call dein#add('davidhalter/jedi-vim')
-" call dein#add('easymotion/vim-easymotion')
+call dein#add('easymotion/vim-easymotion')
 call dein#add('edkolev/tmuxline.vim')
 call dein#add('jiangmiao/auto-pairs')
 call dein#add('junegunn/fzf.vim')
-call dein#add('junegunn/vim-easy-align')
+" call dein#add('junegunn/vim-easy-align')
 call dein#add('lifepillar/vim-solarized8')
 call dein#add('matze/vim-move')
 call dein#add('neovimhaskell/haskell-vim')
@@ -297,12 +297,38 @@ command! -bang -nargs=* Rg
 " Mappings {{{
 map Y y$
 
+" -- Easy Motion {{{
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+" nmap s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 " map \ <Plug>(easymotion-prefix)
+" Gif config
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+let g:EasyMotion_smartcase = 1
+
+"  }}}
+
 nnoremap <C-p> :ProjectFiles<CR>
 
 " -- Easy Align {{{
-xmap ga <Plug>(EasyAlign)   " Start interactive EasyAlign in visual mode (e.g. vipga)
-nmap ga <Plug>(EasyAlign)   " Start interactive EasyAlign for a motion/text object (e.g. gaip)
+" xmap ga <Plug>(EasyAlign)   " Start interactive EasyAlign in visual mode (e.g. vipga)
+" nmap ga <Plug>(EasyAlign)   " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 " }}}
 
 let g:AutoPairsMapCR=0 
@@ -323,8 +349,8 @@ inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
 
 " c-j c-k for moving in snippet
 " let g:UltiSnipsExpandTrigger = "<Plug>(ultisnips_expand)"
-let g:UltiSnipsJumpForwardTrigger = "<Tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
+let g:UltiSnipsJumpForwardTrigger       = "<Tab>"
+let g:UltiSnipsJumpBackwardTrigger      = "<S-Tab>"
 let g:UltiSnipsRemoveSelectModeMappings = 0
 " }}}
 
@@ -373,8 +399,8 @@ let maplocalleader = "`"
 let g:maplocalleader = "`"
 nnoremap <SPACE> <Nop>
 
-"auto indent for brackets
-nmap <leader>w :w!<cr>
+" auto indent for brackets
+" nmap <leader>w :w!<cr>
 nmap <leader>q :lcl<cr>:q<cr>
 nnoremap <leader>h :nohlsearch<Bar>:echo<CR>
 " }}}
