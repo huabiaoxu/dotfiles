@@ -41,13 +41,14 @@ call dein#add('easymotion/vim-easymotion')
 call dein#add('edkolev/tmuxline.vim')
 call dein#add('jiangmiao/auto-pairs')
 call dein#add('junegunn/fzf.vim')
-" call dein#add('junegunn/vim-easy-align')
+call dein#add('junegunn/vim-easy-align')
 call dein#add('lifepillar/vim-solarized8')
 call dein#add('matze/vim-move')
 call dein#add('neovimhaskell/haskell-vim')
 call dein#add('octol/vim-cpp-enhanced-highlight')
 call dein#add('scrooloose/nerdtree')
 call dein#add('SirVer/ultisnips')
+call dein#add('terryma/vim-multiple-cursors')
 call dein#add('tpope/vim-commentary')
 call dein#add('tpope/vim-fugitive')
 call dein#add('tpope/vim-repeat')
@@ -291,6 +292,7 @@ command! -bang -nargs=* Rg
   \   <bang>0)
 " }}}
 
+command! -nargs=* -range -bang Align <line1>,<line2>call easy_align#align(<bang>0, 0, 'command', <q-args>)
 
 " }}}
 
@@ -327,8 +329,8 @@ let g:EasyMotion_smartcase = 1
 nnoremap <C-p> :ProjectFiles<CR>
 
 " -- Easy Align {{{
-" xmap ga <Plug>(EasyAlign)   " Start interactive EasyAlign in visual mode (e.g. vipga)
-" nmap ga <Plug>(EasyAlign)   " Start interactive EasyAlign for a motion/text object (e.g. gaip)
+xmap ga <Plug>(EasyAlign)   " Start interactive EasyAlign in visual mode (e.g. vipga)
+nmap ga <Plug>(EasyAlign)   " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 " }}}
 
 let g:AutoPairsMapCR=0 
@@ -336,7 +338,7 @@ let g:AutoPairsMapCR=0
 " -- NCM2 {{{
 " When the <Enter> key is pressed while the popup menu is visible, it only
 " hides the menu. Use this mapping to close the menu and also start a new line.
-" inoremap <expr> <CR> (pumvisible() ? "\<C-y>" : "\<CR>")
+inoremap <expr> <Enter> (pumvisible() ? "\<C-y>" : "\<CR>")
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"      " TAB goes down menu
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"  " S-TAB goes up menu
 inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>") " ENTER hides menu
@@ -345,10 +347,10 @@ inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>") " ENTER hides menu
 " -- UltiSnips {{{
 " Press enter key to trigger snippet expansion
 " The parameters are the same as `:help feedkeys()`
-inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
+inoremap <silent> <expr> <Enter> ncm2_ultisnips#expand_or("\<CR>", 'n')
 
 " c-j c-k for moving in snippet
-" let g:UltiSnipsExpandTrigger = "<Plug>(ultisnips_expand)"
+let g:UltiSnipsExpandTrigger = "<Plug>(ultisnips_expand)"
 let g:UltiSnipsJumpForwardTrigger       = "<Tab>"
 let g:UltiSnipsJumpBackwardTrigger      = "<S-Tab>"
 let g:UltiSnipsRemoveSelectModeMappings = 0
@@ -362,6 +364,7 @@ nnoremap <silent> <F4> :call LanguageClient#textDocument_references()<CR>
 
 " -- Move A-hjkl {{{
 " let g:move_key_modifier = 'A'
+let g:move_map_keys=0
 " on Mac, need the actual unicode chars instead of alt modifier
 vmap ∆ <Plug>MoveBlockDown
 vmap ˚ <Plug>MoveBlockUp
